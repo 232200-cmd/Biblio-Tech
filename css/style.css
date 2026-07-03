@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+  color: #222;
+}
+
+/* ---------- LOGIN ---------- */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1c2b4a;
+}
+
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.login-box h1 {
+  margin: 0;
+  color: #1c2b4a;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  margin: 10px 0 4px;
+  color: #444;
+}
+
+.login-box input,
+.login-box select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login-box button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #1c2b4a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #16223a;
+}
+
+.error-msg {
+  color: #c0392b;
+  font-size: 13px;
+  min-height: 16px;
+}
+
+/* ---------- TOPBAR ---------- */
+.topbar {
+  background: #1c2b4a;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* ---------- CARD / CONTENT ---------- */
+.card {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1c2b4a;
+}
+
+/* ---------- LECTOR ---------- */
+.datos-lector {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f7f9fc;
+  border-left: 4px solid #1c2b4a;
+  border-radius: 4px;
+}
+
+/* ---------- DEVOLUCIONES ---------- */
+.scan-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.scan-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.scan-row button,
+#buscarLector,
+.btn-registrar {
+  padding: 10px 18px;
+  background: #1c2b4a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tabla-devolucion {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tabla-devolucion th,
+.tabla-devolucion td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tabla-devolucion th {
+  background: #eef1f7;
+}
+
+.alerta {
+  background: #fdecea;
+  border-left: 4px solid #c0392b;
+  padding: 12px;
+  border-radius: 4px;
+  color: #922b21;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag-multa {
+  background: #922b21;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.btn-registrar {
+  width: 100%;
+  font-size: 15px;
+  padding: 12px;
+}

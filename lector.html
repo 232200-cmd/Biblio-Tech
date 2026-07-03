@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BIBLIO-TECH | Identificación del Lector</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>BIBLIO-TECH</h1>
+  </header>
+
+  <main class="card">
+    <h2>Identificación del Lector</h2>
+    <form id="lectorForm">
+      <label for="dni">DNI del Lector</label>
+      <input type="text" id="dni" maxlength="8" placeholder="Ej: 70123456" required>
+
+      <button type="button" id="buscarLector">Buscar</button>
+
+      <div id="datosLector" class="datos-lector" hidden>
+        <p><strong>Nombre:</strong> <span id="nombreLector"></span></p>
+        <p><strong>Código de Carnet:</strong> <span id="codigoCarnet"></span></p>
+        <p><strong>Estado:</strong> <span id="estadoLector"></span></p>
+      </div>
+
+      <p id="lectorError" class="error-msg"></p>
+    </form>
+  </main>
+
+  <script src="js/lector.js"></script>
+</body>
+</html>

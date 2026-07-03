@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BIBLIO-TECH | Devoluciones</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>BIBLIO-TECH</h1>
+    <span id="userTag"></span>
+  </header>
+
+  <main class="card">
+    <h2>Escaneo de Devolución</h2>
+    <div class="scan-row">
+      <input type="text" id="codigoLibro" placeholder="Escanee Código del Libro">
+      <button id="procesarBtn">Procesar</button>
+    </div>
+
+    <table class="tabla-devolucion">
+      <thead>
+        <tr>
+          <th>Libro Escaneado</th>
+          <th>Lector Responsable</th>
+          <th>Vencimiento</th>
+          <th>Retraso</th>
+        </tr>
+      </thead>
+      <tbody id="tablaBody">
+        <tr>
+          <td>Introducción a la Visión Computacional</td>
+          <td>Julio Cesar Lloclli</td>
+          <td>25/06/2026</td>
+          <td>6 Días</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alerta" id="alertaMora">
+      ⚠ ALERTA: Se detectó retraso. Mora total: S/. 12.00
+      <span class="tag-multa">Multa pagada en ventanilla</span>
+    </div>
+
+    <button class="btn-registrar" id="registrarBtn">📥 Registrar Ingreso a Almacén</button>
+  </main>
+
+  <script src="js/devoluciones.js"></script>
+</body>
+</html>

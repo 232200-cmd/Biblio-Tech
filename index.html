@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BIBLIO-TECH | Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+  <div class="login-box">
+    <h1>BIBLIO-TECH</h1>
+    <p class="subtitle">Sistema de Gestión de Biblioteca</p>
+
+    <form id="loginForm">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" placeholder="Ingrese su usuario" required>
+
+      <label for="clave">Contraseña</label>
+      <input type="password" id="clave" placeholder="Ingrese su contraseña" required>
+
+      <label for="rol">Rol</label>
+      <select id="rol" required>
+        <option value="">Seleccione un rol</option>
+        <option value="admin">Administrador</option>
+        <option value="colaborador">Colaborador</option>
+      </select>
+
+      <button type="submit">Ingresar</button>
+      <p id="loginError" class="error-msg"></p>
+    </form>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
